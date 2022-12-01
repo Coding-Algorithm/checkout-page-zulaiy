@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html,
 body {
   padding: 0;
@@ -13,14 +18,160 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
 }
+
+.header {
+  @apply flex justify-between w-full px-5 py-6 mb-8 }
+
+.stepsCover {
+  @apply flex justify-center w-full mb-20
+}
+
+.steps {
+  @apply flex justify-between items-center mr-5 md:mr-12
+}
+
+.stepsMarkIconCover {
+  @apply p-2 rounded-full mr-2 bg-gray-800 md:mr-4
+}
+
+
+.stepTopText {
+  @apply text-[8px] text-gray-300
+}
+
+.stepBottomText {
+  @apply text-[12px] font-bold
+}
+
+.paymentOption {
+  @apply w-full p-8
+}
+
+.paymentTitle {
+  @apply text-[30px] font-bold mb-12
+}
+
+.paymentCard {
+  @apply w-4/5 mb-8 flex flex-row py-8 px-3 border-2 border-black justify-between
+}
+
+
+.paymentCardText {
+  @apply mr-2 text-[14px]
+}
+
+
+.paymentDetails {
+  @apply flex flex-col px-8
+}
+
+
+.paymentCard {
+  @apply w-4/5 mb-8 flex flex-row py-8 px-3 border-2 border-black justify-between
+}
+
+
+.paymentCardText {
+  @apply mr-2 text-[14px]
+}
+
+.formWrapper {
+  @apply flex flex-col
+}
+
+.inputStyle {
+  @apply border border-black mb-0 py-3 px-2 w-4/5
+}
+
+.labelTitle {
+  @apply block mt-4 text-[12px] font-bold
+}
+
+.errorLabel {
+  @apply text-[12px] text-red-600
+}
+
+
+.bottomInputStyle {
+  @apply border border-black mb-0 py-3 px-2 w-2/5
+}
+
+.inputWrapperInner{
+  @apply flex flex-row
+}
+
+
+.submitButton{
+  @apply w-2/6 mt-6 mb-6 py-4 rounded-lg
+}
+
+.delivery {
+  @apply w-full p-8
+}
+
+.DeliveryText{
+  @apply text-[16px] mb-2
+}
+
+
+.deliveryTitleWrapper {
+  @apply flex flex-row items-center justify-between
+}
+
+.deliveryTitle{
+  @apply text-[30px] font-bold mb-4
+}
+
+.orderTitle{
+  @apply text-[30px] font-bold mb-4
+}
+
+/* .orderTextWrapper{
+  @apply flex flex-row
+} */
+
+.orderTextWrapper{
+  @apply w-full flex flex-row justify-between mb-4
+}
+
+.orderSummary{
+  @apply w-full p-8
+}
+
+.orderCat{
+  @apply text-[15px]
+}
+
+
+.orderPrice{
+  @apply text-[15px] font-bold
+}
+
+.orderTotalWrapper{
+  @apply w-full flex flex-row justify-between my-8
+}
+
+.orderTotalCat{
+  @apply text-[24px] font-bold
+}
+
+.orderTotalPrice{
+  @apply text-[24px] font-bold
+}
+
+
+
