@@ -37,7 +37,7 @@ a {
   @apply flex justify-between w-full px-5 py-6 mb-8 }
 
 .stepsCover {
-  @apply flex justify-center w-full mb-20
+  @apply flex justify-center w-full mb-20 flex-wrap
 }
 
 .steps {
